@@ -13,6 +13,19 @@
           "containerPort": 5000
         }
       ]
+    },
+    {
+      "name": "api2",
+      "image": "093859584130.dkr.ecr.ap-northeast-2.amazonaws.com/docker2",
+      "hostname": "api2",
+      "essential": true,
+      "memory": 128,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 3000
+        }
+      ]
     }
   ]
 }

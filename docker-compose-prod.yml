@@ -9,5 +9,13 @@ services:
       - ./api:/app
     ports:
       - "5000:5000"
-
+  api2:
+    image: 093859584130.dkr.ecr.ap-northeast-2.amazonaws.com/docker2
+    build:
+        context: ./api2
+    volumes:
+      - /app/node_modules
+      - ./api2:/app
+    ports:
+      - "3000:3000"
 
