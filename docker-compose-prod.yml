@@ -18,4 +18,9 @@ services:
       - ./api2:/app
     ports:
       - "3000:3000"
-
+  nginx:
+    image: 093859584130.dkr.ecr.ap-northeast-2.amazonaws.com/nginx
+    build:
+        context: ./nginx
+    ports:
+      - "80:80"
